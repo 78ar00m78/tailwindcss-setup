@@ -1,0 +1,28 @@
+{
+  "name": "tailwindcss-setup",
+  "version": "1.0.0",
+  "description": "All stuffs you need to start setting up and use tailwindcss",
+  "main": "index.js",
+  "scripts": {
+    "dev": "postcss --watch ./src/css/tailwind.css -o ./public/build/tailwind.css",
+    "prod": "cross-env NODE_ENV=production postcss ./src/css/tailwind.css -o ./public/build/tailwind.css"
+  },
+  "keywords": [
+    "tailwindcss",
+    "css",
+    "web",
+    "front-end"
+  ],
+  "author": "AhmadReza Manouchehri",
+  "license": "ISC",
+  "dependencies": {
+    "autoprefixer": "^10.4.13",
+    "cross-env": "^7.0.3",
+    "cssnano": "^5.1.14",
+    "postcss": "^8.4.21",
+    "postcss-cli": "^10.1.0",
+    "prettier": "^2.8.2",
+    "prettier-plugin-tailwindcss": "^0.2.1",
+    "tailwindcss": "^3.2.4"
+  }
+}
